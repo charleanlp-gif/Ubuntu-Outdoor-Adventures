@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin: 20px;
+  position: relative;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: #2f5d3a;
+  font-family: Georgia, serif;
+}
+
+h1 {
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+header {
+  background-color: #dfeee3;
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  opacity: 0.9;
+}
+
+nav {
+  background: linear-gradient(to right, #2f5d3a, #4f7f5f);
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Activity cards */
+
+.activity-card {
+  background-color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  flex: 1;
+}
+
+.activity-container {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+/* CSS sprite */
+
+.activity-icon {
+  display: block;
+  width: 128px;
+  height: 128px;
+  background-image: url("images/activity-sprite.png");
+  background-repeat: no-repeat;
+  margin: 0 auto 10px;
+}
+
+.hiking-icon {
+  background-position: 0 0;
+}
+
+.camping-icon {
+  background-position: -128px 0;
+}
+
+.biking-icon {
+  background-position: -256px 0;
+}
+
+/* Home page layout */
+
+#welcome-section {
+  background-color: rgba(234, 244, 236, 0.9);
+  padding: 20px;
+  border: 1px solid #cccccc;
+  float: left;
+  width: 48%;
+}
+
+#activities-section {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  float: right;
+  width: 48%;
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+
+footer {
+  background-color: hsla(135, 32%, 28%, 0.95);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+}
+
+/* Figure */
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+figcaption {
+  font-style: italic;
+  color: #555555;
+}
+
+/* Responsive package images */
+
+.package-image {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.package-flex {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 20px 0;
+}
+
+.package-card {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Tour Packages table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+caption {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2f5d3a;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #dfeee3;
+}
+
+tbody tr {
+  background-color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+tfoot {
+  background-color: #eaf4ec;
+  font-style: italic;
+}
+
+/* CSS Grid */
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.grid-card {
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Booking form */
+
+#booking-form form {
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+#booking-form fieldset {
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#booking-form legend {
+  font-weight: bold;
+  color: #2f5d3a;
+  padding: 0 8px;
+}
+
+#booking-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+#booking-form input,
+#booking-form select,
+#booking-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+#booking-form input[type="color"] {
+  width: 80px;
+  height: 45px;
+  padding: 3px;
+}
+
+#booking-form textarea {
+  resize: vertical;
+}
+
+#booking-form button {
+  background-color: #2f5d3a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Mobile layout */
+
+@media (max-width: 768px) {
+  #welcome-section,
+  #activities-section {
+    float: none;
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .activity-card {
+    margin: 10px 5px;
+  }
+
+  .activity-container {
+    flex-direction: column;
+  }
+
+  .package-flex {
+    flex-direction: column;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+}

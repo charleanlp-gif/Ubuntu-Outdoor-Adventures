@@ -1,0 +1,50 @@
+body {
+  background-color: white;
+  color: black;
+  font-size: 12pt;
+}
+
+nav,
+.useful-links,
+.activity-icon {
+  display: none;
+}
+
+header {
+  background-color: white;
+}
+
+h1,
+h2,
+h3 {
+  color: black;
+}
+
+main {
+  margin: 0;
+}
+
+#welcome-section,
+#activities-section {
+  float: none;
+  width: 100%;
+  border: none;
+}
+
+.activity-container {
+  display: block;
+}
+
+.activity-card {
+  box-shadow: none;
+  border: 1px solid #999999;
+}
+
+footer {
+  background-color: white;
+  color: black;
+}
+
+footer p {
+  color: black;
+}

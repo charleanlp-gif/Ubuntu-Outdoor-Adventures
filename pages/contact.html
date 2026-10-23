@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Ubuntu Outdoor Adventures</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Contact Ubuntu Outdoor Adventures</h1>
+    </header>
+
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="packages.html">Tour Packages</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Contact Us</h2>
+
+        <p>
+          Contact Ubuntu Outdoor Adventures for more information about our
+          activities, tour packages and outdoor experiences.
+        </p>
+
+        <section id="booking-form">
+          <h2>Online Booking Enquiry</h2>
+
+          <p>
+            Complete the form below to send us an enquiry about one of our
+            outdoor adventure packages.
+          </p>
+
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Personal Information</legend>
+
+              <label for="fullname">Full Name:</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+                tabindex="1"
+              />
+
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                accesskey="e"
+                tabindex="2"
+              />
+
+              <label for="contact">Contact Number:</label>
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                required
+                tabindex="3"
+              />
+
+              <label for="website">Website (optional):</label>
+              <input
+                type="url"
+                id="website"
+                name="website"
+                tabindex="4"
+              />
+            </fieldset>
+
+            <fieldset>
+              <legend>Booking Information</legend>
+
+              <label for="package">Preferred Adventure Package:</label>
+              <select
+                id="package"
+                name="package"
+                required
+                accesskey="p"
+                tabindex="5"
+              >
+                <option value="">Select a package</option>
+                <option value="hiking">Hiking Adventure</option>
+                <option value="camping">Camping Escape</option>
+                <option value="biking">Mountain Biking Adventure</option>
+                <option value="nature-walk">Guided Nature Walk</option>
+                <option value="weekend">Weekend Adventure</option>
+              </select>
+
+              <label for="participants">Number of Participants:</label>
+              <input
+                type="number"
+                id="participants"
+                name="participants"
+                min="1"
+                required
+                tabindex="6"
+              />
+
+              <label for="booking-date">Preferred Booking Date:</label>
+              <input type="date" id="booking-date" name="booking-date" required tabindex="7"/>
+
+              <label for="booking-time">Preferred Time:</label>
+              <input
+                type="time"
+                id="booking-time"
+                name="booking-time"
+                required
+                tabindex="8"
+              />
+
+              <label for="activity">Favourite Activity:</label>
+              <input
+                type="text"
+                id="activity"
+                name="activity"
+                list="activity-options"
+                required
+                tabindex="9"
+              />
+
+              <datalist id="activity-options">
+                <option value="Hiking"></option>
+                <option value="Camping"></option>
+                <option value="Mountain Biking"></option>
+                <option value="Nature Walks"></option>
+              </datalist>
+
+              <label for="intensity">Preferred Adventure Intensity:</label>
+              <input
+                type="range"
+                id="intensity"
+                name="intensity"
+                min="1"
+                max="5"
+                value="3"
+                tabindex="10"
+              />
+
+              <label for="colour">Preferred Booking Tag Colour:</label>
+              <input
+                type="color"
+                id="colour"
+                name="colour"
+                value="#2f5d3a"
+                tabindex="11"
+              />
+
+              <label for="comments">Additional Comments:</label>
+              <textarea
+                id="comments"
+                name="comments"
+                rows="5"
+                cols="40"
+                tabindex="12"
+              ></textarea>
+            </fieldset>
+
+            <button type="submit" accesskey="s" tabindex="13">
+              Send Booking Enquiry
+            </button>
+            
+          </form>
+        </section>
+
+        <p>
+          Email:
+          <a href="mailto:bookings@ubuntuoutdooradventures.co.za">
+            bookings@ubuntuoutdooradventures.co.za
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <div class="useful-links">
+      <a href="https://www.sanparks.org">South African National Parks</a> |
+      <a href="mailto:bookings@ubuntuoutdooradventures.co.za">Email Us</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Ubuntu Outdoor Adventures.</p>
+    </footer>
+  </body>
+</html>
